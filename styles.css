@@ -161,7 +161,7 @@ main {
 }
 /* --------about me--- */
 .aboutMe {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: row;
     padding: 50px 0;
@@ -250,6 +250,32 @@ footer {
     .heroText2 {
         top: 67px;
 
+    }
+    .aboutMe {
+        /* height: 100vh; */
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid goldenrod; */
+    }
+    .profileImage {
+        width: 90%;
+    }
+    .roundIm {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position-x: -51px;
+        background-position-y: -152px;
+    }
+
+    .aboutMeText {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .button2 {
+        margin: 40px auto;
     }
 
 }
