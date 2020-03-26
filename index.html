@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,600|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -37,8 +37,8 @@
         <!-- <img src="assets/priscilla-du-preez-LpmlXMMEX4U-unsplash.jpg" alt=""> -->
         <section class="aboutMe">
             <div class="profileImage">
-                <div class="roundIm"></div>
-
+                <img class="roundIm" src="assets/myProfile4.jpg" alt="">
+                
             </div>
             <div class="aboutMeText">
                 <h2 class="specialFont">About Me</h2>
@@ -54,69 +54,22 @@
     </main>
     <footer >
         <div class="socialLinks">
-            <a href="https://github.com/SaraMunir"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <div class="socialBox">
+                <a href="https://github.com/SaraMunir"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="socialBox">
+                <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+            </div>
+            <div class="socialBox">
+                <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+            </div>
         </div>
         <div class="copyRight">
             <p>© 2020 by Sara Munir. </p>
         </div>
     </footer>
-        <script>
-        $(document).ready(function(){
-            // $(window).scroll(function() {
-            // var scroll = $(window).scrollTop();
-            // $(".hero").css({
-            //     transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
-            // });
-            // });
-        //=================FOR nav
-            $( ".menuBar" ).hide()
-            $( "#hider" ).mouseover(function() {
-                $( ".menuBar" ).show( 1500 );
-                $( "#hider" ).hide( 500 );
-                return;
-            });
-            $( ".menuBarUL" ).mouseleave(function() {
-                $( ".menuBar" ).hide( 1500 );
-                $( "#hider" ).show( 1500 );
-            });
-        //=================FOR H1 ANIMATION
-        function heroAnimation(){
-            
-                // $(".heroText2").fadeIn('slow');
-                $(".heroText2").animate({
-                    left: '50%',
-                }, 2500);
-                // $(".heroText1").fadeIn('slow');
-                $(".heroText1").animate({
-                    right: '50%',
-                    // fontSize: '73px'
-                }, 2500);
-                return;
-            }
-            setTimeout(heroAnimation, 500);
-            // heroAnimation();
-
-            $("h1").mouseenter(function(){
-                // $(".heroText1").css("background-color", "yellow");
-                $(".heroText1").animate({
-                    right: '60%',
-                }, 1000);
-                $(".heroText2").animate({
-                    left: '60%',
-                }, 1000);
-            });
-            $("h1").mouseleave(function(){
-                $(".heroText1").animate({
-                    right: '50%',
-                }, 1000);
-                $(".heroText2").animate({
-                    left: '50%',
-                }, 1000);
-            });
-            //========dont delete below
-            });
-        </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

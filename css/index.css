@@ -17,7 +17,7 @@ body {
 header {
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0), #171717),
-    url('assets/71ffb47ffd504078956bc68966b485f5.jpg');
+    url('../assets/71ffb47ffd504078956bc68966b485f5.jpg');
     /* background-image: radial-gradient( rgba(42, 49, 59, 0.1), rgb(27, 27, 27) ), url(assets/71ffb47ffd504078956bc68966b485f5.jpg); */
     background-size: cover;
     /* background-attachment: fixed; */
@@ -168,21 +168,28 @@ main {
     /* border: 1px solid goldenrod; */
 }
 .profileImage {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 50px 30px 50px 70px;
+    border: 1px solid palevioletred;
+}
+.aboutMeText {
+    width: 60%;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px solid rgb(112, 209, 216);
 }
 .roundIm {
-    width: 350px;
-    height: 350px;
+
     border-radius: 100%;
-    background-image: url(assets/jake-weirick-k-lNc9lr7DE-unsplash.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 20px 0px 20px 136px;
-    background-position-x: 154px;
-    background-position-y: -25px;
-}
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+
+    }
 .specialFont {
     font-size: 40px;
     color: coral;
@@ -190,10 +197,7 @@ main {
     font-weight: 600;
     padding: 10px 0;
 }
-.aboutMeText {
-    width: 50%;
 
-}
 footer {
     height: 20vh;
     margin: 20px 0;
@@ -204,6 +208,11 @@ footer {
 }
 .socialLinks {
     height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.socialBox {
+    padding: 20px;
 }
 .socialLinks a i {
     margin: 0 15px;
