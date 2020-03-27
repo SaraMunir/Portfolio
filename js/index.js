@@ -6,7 +6,7 @@ $(document).ready(function(){
     // });
     // });
 //=================FOR nav
-    $( ".menuBar" ).hide()
+    $( ".menuBar" ).hide() 
     $( "#hider" ).mouseover(function() {
         $( ".menuBar" ).show( 1500 );
         $( "#hider" ).hide( 500 );
@@ -50,5 +50,53 @@ function heroAnimation(){
             left: '50%',
         }, 1000);
     });
+//========show more
+
+
+
+    //=====scroll
+    
     //========dont delete below
-    });
+});
+
+function ShowStack(){
+    console.log("onlcick works?")
+
+    $( "#devStacks" ).show( 1500 );
+    $('html, body').animate({
+        scrollTop: $("#devStacks").offset().top
+        }, 1500);
+    
+}
+
+
+$(".boxTest").scroll(function() {
+
+    alert('box test reached')
+    /* Check the location of each desired element */
+    // $('.boxTest').each(function(i) {
+    //     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    //     var top_of_object = $(this).offset().top;
+    //     // console.log(bottom_of_object)
+    //     // console.log(top_of_object)
+
+    //     var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    // /* If the object is completely visible in the window, fade it it */
+    //     if (bottom_of_window > top_of_object) {
+            
+            
+    //         // $(this).animate({
+    //         //     right: '50%',
+    //         // }, 2000);
+    //     }
+    //     if (bottom_of_window < bottom_of_object) {
+            
+    //         // $(this).animate({
+    //         //     right: '50%',
+    //         // }, 2000);
+    //     }
+    // });
+
+});
+        

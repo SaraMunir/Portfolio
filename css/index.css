@@ -73,6 +73,9 @@ header {
 .logo {
     width: 50px;
 }
+.hide{
+    display: none;
+}
 /* ==========h1====== */
 h1 {
     width: 50%;
@@ -127,8 +130,7 @@ h1 {
     padding: 20px;
     border-radius: 40px;
     transition: all ease .4s;
-    margin: 50px 0;
-
+    margin: 15px auto;
 }
 .button2:hover {
     color: white;
@@ -172,7 +174,6 @@ main {
     justify-content: center;
     width: 40%;
     padding: 50px 30px 50px 70px;
-    border: 1px solid palevioletred;
 }
 .aboutMeText {
     width: 60%;
@@ -180,16 +181,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border: 1px solid rgb(112, 209, 216);
 }
 .roundIm {
-
+    
     border-radius: 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     object-fit: cover;
-
-    }
+    
+}
 .specialFont {
     font-size: 40px;
     color: coral;
@@ -218,6 +218,55 @@ footer {
     margin: 0 15px;
     color: white;
     transition: ease all .4s;
+}
+.boxTestRelative{
+    position: relative;
+}
+.boxTest{
+    background: palevioletred;
+    width: 50%;
+    padding: 50px;
+    border: 1px solid palevioletred;
+    /* opacity:0; */
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+.boxTest2 {
+    height: 100vh;
+}
+.stacksRow{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stack {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.stackImg {
+    width: 8vw;
+    height: 8vw;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.devStack{
+    /* margin: 0 auto; */
+}
+
+.jstCntCentre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.aboutMeDes {
+    font-size: 1.3rem;
 }
 @keyframes bob {
     0% {		/* note: transform's default value is none */

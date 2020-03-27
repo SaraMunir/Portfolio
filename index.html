@@ -11,6 +11,7 @@
     <script src="https://use.fontawesome.com/fbeca39ed0.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navBar">
@@ -35,23 +36,77 @@
     </header>
     <main>
         <!-- <img src="assets/priscilla-du-preez-LpmlXMMEX4U-unsplash.jpg" alt=""> -->
-        <section class="aboutMe">
-            <div class="profileImage">
-                <img class="roundIm" src="assets/myProfile4.jpg" alt="">
-                
+
+        <section class="">
+            <div class="aboutMe">
+                <div class="profileImage">
+                    <img class="roundIm" src="assets/myProfile4.jpg" alt="">
+                    
+                </div>
+                <div class="aboutMeText">
+                    <h2 class="specialFont">About Me</h2>
+                    <p class="aboutMeDes">Hi I'm Sara, A full stackweb developer with a background in architecture. I absolutely love being able to combine my knack for design and logic based problem solving to bring abstract ideas to functional and user friendly websites. I am passionate about programing with key interest in both designs and animations.</p>
+                    
+                    <!-- <div class="myBtnClr button2 ">Learn More</div> -->
+                </div>
             </div>
-            <div class="aboutMeText">
-                <h2 class="specialFont">About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore dolorum porro neque! Nisi nobis rem omnis! Aspernatur aliquam suscipit in repellendus ducimus incidunt maxime eos. Consectetur quisquam sit iusto?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores in quisquam numquam temporibus iure maxime quia error cupiditate eum ex enim mollitia eos dolore, quos quas corrupti ipsa. Iste.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laborum, itaque a quod omnis suscipit sed error dignissimos. Nobis rem fuga, sit saepe quo et officiis molestiae eveniet natus? Adipisci!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam cum quos suscipit dolorem quis cupiditate assumenda eligendi ullam quod? Dicta dolor cum aut quia dolorum culpa incidunt odio ipsum.
-                </p>
-                <a href="" class="myBtnClr button2 ">Learn More</a>
-                <!-- <div class="myBtnClr button2 ">Learn More</div> -->
-            </div>
+            <div class="myBtnClr button2" onClick="ShowStack()">Show More</div>
         </section>
     </main>
+    <section class="hide" id="devStacks">
+        <div class="jstCntCentre hide">
+            <h3 class="specialFont">Development Stacks I Use</h3>
+            <div class="stacksRow">
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/html5-logo-png-transparent.png" alt="">
+                    <h3>HTML</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/CSS3_logo_and_wordmark.svg.png" alt="">
+                    <h3>CSS</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/1280px-React-icon.svg.png" alt="">
+                    <h3>REACT</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/javascript-logo-E967E87D74-seeklogo.com.png" alt="">
+                    <h3>Javascript</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/jquery-octos-global-javascript-library-document-object-model-ajax-framework-png-clip-art.png" alt="">
+                    <h3>JQuery</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/node-js-tutorial.png" alt="">
+                    <h3>Node Js</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e36b1814.0344731115305261794387.png" alt="">
+                    <h3>Mongo Db</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="">
+                    <h3>My Sql</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/photoshop1 (1).png" alt="">
+                    <h3>Photoshop</h5>
+                </div>
+                <div class="stack jstCntCentre">
+                    <img class="stackImg" src="assets/adobe-illustrator-cc-logo-png-transparent.png" alt="">
+                    <h3>Adobe Illustrator</h5>
+                </div>
+            </div>
+            <div class="myBtnClr button2" onClick="ShowProjects()">Show Projects</div>
+        </div>
+
+    </section>
+
+    <!-- <div class="boxTest2">
+
+    </div> -->
+    <div data-aos="fade-in"></div>
     <footer >
         <div class="socialLinks">
             <div class="socialBox">
@@ -59,11 +114,9 @@
             </div>
             <div class="socialBox">
                 <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-
             </div>
             <div class="socialBox">
                 <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-
             </div>
         </div>
         <div class="copyRight">
@@ -71,5 +124,9 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
