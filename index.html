@@ -19,7 +19,7 @@
         <i class="fa fa-th fa-2x" id="hider" aria-hidden="true"></i>
         <div class="menuBar">
             <ul class="menuBarUL">
-                <li><a href="#aboutMe">ABOUT</a></li>
+                <li><a href="#" onClick="scrolAbout()">ABOUT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -30,8 +30,8 @@
             <span class="heroText1">Sara</span>
             <span class="heroText2">MUNIR</span>
         </h1>
-        <div class="down">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+        <div class="down" onClick="scrolAbout()">
+            <svg  viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
         </div>
     </header>
     <main>
@@ -102,7 +102,9 @@
         </div>
     </section>
     <section class="hide" id="devProjects">
-        <div class="row">
+        <h3 class="specialFont" style="text-align: center;">Projects</h3>
+
+        <div class="row" id="weatherBoard">
             <div class="projectImg">
                 <img class="projectImg1" src="assets/weatherApp.jpg" alt="">
             </div>
@@ -119,8 +121,25 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <h3>More to be added</h3>
+        <div class="row" id="myCookbook">
+            <div class="projectImg">
+                <img class="projectImg1" src="assets/cookingForDummies.png" alt="">
+            </div>
+            <div class="projectDesc">
+                <div class="marT">
+                    <h3>Cooking For Dummies</h3>
+                    <br>
+                    <p>
+                        This web application is designed to take a user step by step through any recipe found on the internet. The user is able to save their favourite recipes and access them later. User is provided with nutritional information.
+                    </p>
+                    <br>
+                    <a href="https://stephanieblom.github.io/Project-1/" class="button2" style="width: 150px;">Live Demo</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row" id="buttonsArea">
+            <div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>
         </div>
     </section>
 

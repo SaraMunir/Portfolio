@@ -68,14 +68,38 @@ function ShowStack(){
         }, 1500);
     
 }
+
+function scrolAbout(){
+    $('html, body').animate({
+        scrollTop: $(".aboutMe").offset().top
+        }, 1500);
+};
 function ShowProjects(){
     $( "#devStacks" ).hide( 1500 );
     $( "#devProjects" ).show( 1500 );
     $('html, body').animate({
         scrollTop: $("#devStacks").offset().top
         }, 1500);
-}
+    $( "#myCookbook" ).hide( 1500 );
 
+}
+function NextProject(){
+    $( "#weatherBoard" ).hide( 1500 );
+    $( "#myCookbook" ).show( 1500 );
+    // $('html, body').animate({
+    //     scrollTop: $("#devStacks").offset().top
+    //     }, 1500);
+    $( "#buttonsArea").html('<div class="button2" style="width: 150px;" onClick="PrevProject()">Prev Project</div>')
+}
+function PrevProject(){
+    $( "#weatherBoard" ).show( 1500 );
+    $( "#myCookbook" ).hide( 1500 );
+    // $('html, body').animate({
+    //     scrollTop: $("#devStacks").offset().top
+    //     }, 1500);
+    $( "#buttonsArea").html('<div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>')
+
+}
 
 $(".boxTest").scroll(function() {
 
