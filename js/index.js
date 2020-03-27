@@ -68,6 +68,13 @@ function ShowStack(){
         }, 1500);
     
 }
+function ShowProjects(){
+    $( "#devStacks" ).hide( 1500 );
+    $( "#devProjects" ).show( 1500 );
+    $('html, body').animate({
+        scrollTop: $("#devStacks").offset().top
+        }, 1500);
+}
 
 
 $(".boxTest").scroll(function() {
