@@ -261,12 +261,14 @@ footer {
     justify-content: center;
 }
 .socialBox {
-    padding: 20px;
+    width: 20vh;
+    height: 20vh;
+    /* padding: 20px; */
 }
 .socialLinks a i {
     margin: 0 15px;
     color: white;
-    transition: ease all .4s;
+    transition: ease all .6s;
 }
 .boxTestRelative{
     position: relative;
@@ -285,7 +287,7 @@ footer {
     height: 100vh;
 }
 .stacksRow{
-    width: 70%;
+    width: 79%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -293,7 +295,7 @@ footer {
     justify-content: center;
 }
 .stack {
-    width: 13vw;;
+    width: 33vh;
     text-align: center;
     padding: 20px;
     margin: 5px auto;
@@ -304,10 +306,14 @@ footer {
 }
 
 .stackImg {
-    width: 8vw;
-    height: 8vw;
+    width: 20vh;
+    height: 20vh;
     object-fit: cover;
     margin: 0 auto;
+} 
+.stckSect {
+    /* height: 25vh; */
+    /* border: 1px solid red; */
 }
 
 #devStacks{
@@ -435,8 +441,9 @@ img {
 .socialLinks a i:hover {
     color: coral;
     font-size: 4rem;
-    animation: bob .8s linear 1;
+    animation: bob 1s linear 1;
 }
+
 
 
 

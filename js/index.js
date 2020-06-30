@@ -164,6 +164,11 @@ function showProj1Detail(projId){
 function closeProjWnd(){
     $( ".projWindow" ).addClass( "hide" )
 }
+function ShowContacts(){
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+        }, 1500);
+}
 async function ShowProjects(){
     // $( "#devStacks" ).hide( 1500 );
     $( "#devProjects" ).show();

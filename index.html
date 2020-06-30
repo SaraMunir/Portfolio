@@ -22,8 +22,8 @@
         <div class="menuBar">
             <ul class="menuBarUL">
                 <li><a href="#" onClick="scrolAbout()">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" onClick="ShowProjects()">PROJECTS</a></li>
+                <li><a href="#" onClick="ShowContacts()">CONTACT</a></li>
             </ul>
         </div>
     </nav>
@@ -38,61 +38,72 @@
             <div class="readMoreBtn button2 "  onClick="scrolAbout()">READ MORE</div>
         </div>
     </header>
-    
     <!-- make sure to add hide on class someme -->
     <main class="someme ">
         <section >
             <div class="aboutMe ">
                 <div class="profileImage">
                     <img class="roundIm myImg" src="assets/myProfilePhotoCutOut4.png" alt="">
-                    
                 </div>
                 <div class="aboutMeText">
                     <h2 class="specialFont">About Me</h2>
                     <p class="aboutMeDes">Hi I'm Sara, A full stackweb developer with a background in architecture. I absolutely love being able to combine my knack for design and logic based problem solving to bring abstract ideas to functional and user friendly websites. I am passionate about programing with key interest in both designs and animations.</p>
-                    <!-- <div class="myBtnClr button2 ">Learn More</div> -->
                     <div class="myBtnClr button2" onClick="ShowStack()" style="width: 40%;">Show More</div>
                 </div>
-                
             </div>
-            
         </section>
-        
         <section class="" id="devStacks">
             <div class="jstCntCentre hide">
                 <h3 class="specialFont" style="font-size: 3rem;
                 color: grey; margin: 20px 0;">Development Stacks I Use</h3>
                 <div class="stacksRow greyFont">
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/Html-logo.png" alt="">
+                        <div class="stckSect">
+
+                            <img class="stackImg" src="assets/Html-logo.png" alt="">
+                        </div>
                         <h5>HTML</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/Css-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/Css-logo.png" alt="">
+                        </div>
                         <h5>CSS</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/JavaScript-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/JavaScript-logo.png" alt="">
+                        </div>
                         <h5>JAVASCRIPT</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/React-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/React-logo.png" alt="">
+                        </div>
                         <h5>REACT</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/JQuery-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/JQuery-logo.png" alt="">
+                        </div>
                         <h5>JQuery</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/Node-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/Node-logo.png" alt="">
+                        </div>
                         <h5>Node Js</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/Mongo-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/Mongo-logo.png" alt="">
+                        </div>
                         <h5>Mongo Db</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/MySql-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/MySql-logo.png" alt="">
+                        </div>
                         <h5>My SQL</h5>
                     </div>
                     <!-- <div class="stack jstCntCentre">
@@ -100,16 +111,20 @@
                         <h5>EXPRESS</h5>
                     </div> -->
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/PS-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/PS-logo.png" alt="">
+                        </div>
                         <h5>Photoshop</h5>
                     </div>
                     <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/AI-logo.png" alt="">
+                        <div class="stckSect">
+                            <img class="stackImg" src="assets/AI-logo.png" alt="">
+                        </div>
                         <h5>Adobe Illustrator</h5>
                     </div>
                 </div>
             </div>
-            <div class="myBtnClr button2" onClick="ShowProjects()" style="width: 20%;">Show Projects</div>
+            <div class="myBtnClr button2" onClick="ShowProjects()" style="width: 20%;">Projects</div>
         </section>
         <!-- make sure to add hide on class devprojects -->
         
@@ -156,59 +171,23 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row" id="weatherBoard">
-                <div class="projectImg">
-                    <img class="projectImg1" src="assets/weatherApp.jpg" alt="">
-                </div>
-                <div class="projectDesc">
-                    <div class="marT">
-                        <h3>Weather Dashboard</h3>
-                        <br>
-                        <p>
-                            This weather app allows users to search for a city with current and future weather conditions for that city. Users are able to add to the search history and also retrive the data when they visit the app again. The user can delete the cities from the search history
-                        </p>
-                        <br>
-                        <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="myCookbook">
-                <div class="projectImg">
-                    <img class="projectImg1" src="assets/cookingForDummies.png" alt="">
-                </div>
-                <div class="projectDesc">
-                    <div class="marT">
-                        <h3>Cooking For Dummies</h3>
-                        <br>
-                        <p>
-                            This web application is designed to take a user step by step through any recipe found on the internet. The user is able to save their favourite recipes and access them later. User is provided with nutritional information.
-                        </p>
-                        <br>
-                        <a href="https://stephanieblom.github.io/Project-1/" class="button2" style="width: 150px;">Live Demo</a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="buttonsArea">
-                <div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>
-            </div> -->
         </section>
-        <footer >
+        <footer id="contact">
+            <h3 class="specialFont footerHead" style="font-size: 2.5rem; color: grey; margin: 20px 0; height: 15vh;">Contact Me</h3>
             <div class="socialLinks">
                 <div class="socialBox">
                     <a href="https://github.com/SaraMunir">
-                        <i class="fab fa-github fa-2x"></i></a>
+                        <i class="fab fa-github fa-3x"></i></a>
                 </div>
                 <div class="socialBox">
-                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="mailto:sara.m07011@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
                 </div>
                 <div class="socialBox">
-                    <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fab fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fab fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="copyRight">
-                <p>© 2020 by Sara Munir. </p>
+                <p>© 2020 by Sara Munir</p>
             </div>
         </footer>
     </main>
