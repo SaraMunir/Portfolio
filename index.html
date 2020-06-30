@@ -9,11 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/fbeca39ed0.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body>
+<body class="somt">
     <nav class="navBar">
         <img class="logo" src="assets/sm_logo_white.png" alt="">
         <i class="fa fa-th fa-2x" id="hider" aria-hidden="true"></i>
@@ -26,144 +28,198 @@
         </div>
     </nav>
     <header class="hero">
-        <h1>
+        <p class="hide intro heroCommon">Hi! I'm</p>
+        <h1 class="myName">
             <span class="heroText1">Sara</span>
             <span class="heroText2">MUNIR</span>
         </h1>
-        <div class="down" onClick="scrolAbout()">
-            <svg  viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+        <p class="hide subHero heroCommon"> I'm a full-stack web developer</p>
+        <div class="readAbtMeBtn hide">
+            <div class="readMoreBtn button2 "  onClick="scrolAbout()">READ MORE</div>
         </div>
     </header>
-    <main>
-        <!-- <img src="assets/priscilla-du-preez-LpmlXMMEX4U-unsplash.jpg" alt=""> -->
-
-        <section class="">
-            <div class="aboutMe">
+    
+    <!-- make sure to add hide on class someme -->
+    <main class="someme ">
+        <section >
+            <div class="aboutMe ">
                 <div class="profileImage">
-                    <img class="roundIm" src="assets/myProfile4.jpg" alt="">
+                    <img class="roundIm myImg" src="assets/myProfilePhotoCutOut4.png" alt="">
                     
                 </div>
                 <div class="aboutMeText">
                     <h2 class="specialFont">About Me</h2>
                     <p class="aboutMeDes">Hi I'm Sara, A full stackweb developer with a background in architecture. I absolutely love being able to combine my knack for design and logic based problem solving to bring abstract ideas to functional and user friendly websites. I am passionate about programing with key interest in both designs and animations.</p>
-                    
                     <!-- <div class="myBtnClr button2 ">Learn More</div> -->
+                    <div class="myBtnClr button2" onClick="ShowStack()" style="width: 40%;">Show More</div>
                 </div>
+                
             </div>
-            <div class="myBtnClr button2" onClick="ShowStack()">Show More</div>
+            
         </section>
+        
+        <section class="" id="devStacks">
+            <div class="jstCntCentre hide">
+                <h3 class="specialFont" style="font-size: 3rem;
+                color: grey; margin: 20px 0;">Development Stacks I Use</h3>
+                <div class="stacksRow greyFont">
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/Html-logo.png" alt="">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/Css-logo.png" alt="">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/JavaScript-logo.png" alt="">
+                        <h5>JAVASCRIPT</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/React-logo.png" alt="">
+                        <h5>REACT</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/JQuery-logo.png" alt="">
+                        <h5>JQuery</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/Node-logo.png" alt="">
+                        <h5>Node Js</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/Mongo-logo.png" alt="">
+                        <h5>Mongo Db</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/MySql-logo.png" alt="">
+                        <h5>My SQL</h5>
+                    </div>
+                    <!-- <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/Express-logo.png" alt="">
+                        <h5>EXPRESS</h5>
+                    </div> -->
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/PS-logo.png" alt="">
+                        <h5>Photoshop</h5>
+                    </div>
+                    <div class="stack jstCntCentre">
+                        <img class="stackImg" src="assets/AI-logo.png" alt="">
+                        <h5>Adobe Illustrator</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="myBtnClr button2" onClick="ShowProjects()" style="width: 20%;">Show Projects</div>
+        </section>
+        <!-- make sure to add hide on class devprojects -->
+        
+        <section class="hide" id="devProjects">
+            <div class="projWindow hide">
+                <div class="projWndMrg">
+                    <div class="d-flex justify-content-end">
+                        <i class="closeBtn fas fa-times" onClick="closeProjWnd()"></i>
+                    </div>
+                    <div class="row" id="pro1">
+                        <img src="assets/photo-1560169573-5ff6f7f35fe4.jfif" alt="ss" class="col-lg-6" style="width: 45%;">
+                        <div class="details1 col-lg-6" style="width: 45%;">
+                            <h2>Movie Maniax</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus, quis quos, a aliquid soluta animi possimus sunt asperiores natus quasi mollitia distinctio et hic ab earum repellat optio harum?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis odio repellat. Vero deserunt omnis repudiandae alias sunt, adipisci id at fugiat necessitatibus cumque! Quia similique quibusdam incidunt labore aliquam?</p>
+                            <div class="d-flex justify-content-center" style="width: 70%;">
+                                <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
+                                <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <h3 class="specialFont" style="text-align: center;">Projects</h3>
+            <div class="container">
+                <div class="projects" id="projectsSection">
+                    <div class="myRow proj1" id="proj1">
+                        <img class="projImg" src="assets/priscilla-du-preez-LpmlXMMEX4U-unsplash.jpg" alt="">
+                        <div class="projSumm hide" id="proj1Detl">
+                            <h2 class=" text-center">Movie Maniax</h2>
+                            <div class="myBtnMgn button2 btnWdth2" onClick="showProj1Detail('pro1')">Show Detail</div>
+                        </div> 
+                    </div>
+                    <div class="projectBox" id="proj2">
+                        <img class="projImg" src="assets/fitnessDiariesPre.png" alt="">
+                        <div class="projSumm ">
+                            <h3>project name</h3>
+                            <div class="myBtnClr button2" onClick="ShowProjDetail()">Show Detail</div>
+                        </div>
+                    </div>
+                    <div class="projectBox" id="proj3">
+                        <img class="projImg" src="assets/googleBooksPre.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row" id="weatherBoard">
+                <div class="projectImg">
+                    <img class="projectImg1" src="assets/weatherApp.jpg" alt="">
+                </div>
+                <div class="projectDesc">
+                    <div class="marT">
+                        <h3>Weather Dashboard</h3>
+                        <br>
+                        <p>
+                            This weather app allows users to search for a city with current and future weather conditions for that city. Users are able to add to the search history and also retrive the data when they visit the app again. The user can delete the cities from the search history
+                        </p>
+                        <br>
+                        <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="myCookbook">
+                <div class="projectImg">
+                    <img class="projectImg1" src="assets/cookingForDummies.png" alt="">
+                </div>
+                <div class="projectDesc">
+                    <div class="marT">
+                        <h3>Cooking For Dummies</h3>
+                        <br>
+                        <p>
+                            This web application is designed to take a user step by step through any recipe found on the internet. The user is able to save their favourite recipes and access them later. User is provided with nutritional information.
+                        </p>
+                        <br>
+                        <a href="https://stephanieblom.github.io/Project-1/" class="button2" style="width: 150px;">Live Demo</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="buttonsArea">
+                <div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>
+            </div> -->
+        </section>
+        <footer >
+            <div class="socialLinks">
+                <div class="socialBox">
+                    <a href="https://github.com/SaraMunir">
+                        <i class="fab fa-github fa-2x"></i></a>
+                </div>
+                <div class="socialBox">
+                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="socialBox">
+                    <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fab fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="copyRight">
+                <p>© 2020 by Sara Munir. </p>
+            </div>
+        </footer>
     </main>
-    <section class="hide" id="devStacks">
-        <div class="jstCntCentre hide">
-            <h3 class="specialFont">Development Stacks I Use</h3>
-            <div class="stacksRow">
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/html5-logo-png-transparent.png" alt="">
-                    <h3>HTML</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/CSS3_logo_and_wordmark.svg.png" alt="">
-                    <h3>CSS</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/1280px-React-icon.svg.png" alt="">
-                    <h3>REACT</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/javascript-logo-E967E87D74-seeklogo.com.png" alt="">
-                    <h3>Javascript</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/jquery-octos-global-javascript-library-document-object-model-ajax-framework-png-clip-art.png" alt="">
-                    <h3>JQuery</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/node-js-tutorial.png" alt="">
-                    <h3>Node Js</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e36b1814.0344731115305261794387.png" alt="">
-                    <h3>Mongo Db</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="">
-                    <h3>My Sql</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/photoshop1 (1).png" alt="">
-                    <h3>Photoshop</h5>
-                </div>
-                <div class="stack jstCntCentre">
-                    <img class="stackImg" src="assets/adobe-illustrator-cc-logo-png-transparent.png" alt="">
-                    <h3>Adobe Illustrator</h5>
-                </div>
-            </div>
-            <div class="myBtnClr button2" onClick="ShowProjects()">Show Projects</div>
-        </div>
-    </section>
-    <section class="hide" id="devProjects">
-        <h3 class="specialFont" style="text-align: center;">Projects</h3>
-
-        <div class="row" id="weatherBoard">
-            <div class="projectImg">
-                <img class="projectImg1" src="assets/weatherApp.jpg" alt="">
-            </div>
-            <div class="projectDesc">
-                <div class="marT">
-                    <h3>Weather Dashboard</h3>
-                    <br>
-                    <p>
-                        This weather app allows users to search for a city with current and future weather conditions for that city. Users are able to add to the search history and also retrive the data when they visit the app again. The user can delete the cities from the search history
-                    </p>
-                    <br>
-                    <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row" id="myCookbook">
-            <div class="projectImg">
-                <img class="projectImg1" src="assets/cookingForDummies.png" alt="">
-            </div>
-            <div class="projectDesc">
-                <div class="marT">
-                    <h3>Cooking For Dummies</h3>
-                    <br>
-                    <p>
-                        This web application is designed to take a user step by step through any recipe found on the internet. The user is able to save their favourite recipes and access them later. User is provided with nutritional information.
-                    </p>
-                    <br>
-                    <a href="https://stephanieblom.github.io/Project-1/" class="button2" style="width: 150px;">Live Demo</a>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row" id="buttonsArea">
-            <div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>
-        </div>
-    </section>
+    
 
 
     <!-- <div class="boxTest2">
 
     </div> -->
     <div data-aos="fade-in"></div>
-    <footer >
-        <div class="socialLinks">
-            <div class="socialBox">
-                <a href="https://github.com/SaraMunir"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div class="socialBox">
-                <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div class="socialBox">
-                <a href="https://www.linkedin.com/in/sara-munir-689058b5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <div class="copyRight">
-            <p>© 2020 by Sara Munir. </p>
-        </div>
-    </footer>
+    
     <script src="js/index.js"></script>
 
 </body>

@@ -7,10 +7,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
-body {
+.somt {
     font-family: 'Roboto', sans-serif;
     color: white;
-    background: #171717;
+    background: #2c2c2c;
     position: relative;
 }
 
@@ -23,7 +23,7 @@ header {
     /* background-attachment: fixed; */
     height: 100vh;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .navBar {
     position: absolute;
@@ -63,6 +63,11 @@ header {
     width: 100%;
     transition: all ease .4s;
 }
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8rem;
+
+}
 .menuBar ul li a:hover {
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, 0.801);
@@ -77,64 +82,88 @@ header {
     display: none;
 }
 /* ==========h1====== */
-h1 {
+.myName {
     width: 50%;
     margin: 0 auto;
     padding: 100px;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 73px;
-    color: coral;
+    color:white;
     position: relative;
-    top: 35%;
+    top: 30%;
 }
 .heroText1 {
-    color: white;
-    font-size: 100px;
+    color: coral;
+    font-size: 7rem;
     position: absolute;
     top: 0;
     right: -100%;
 }
 .heroText2 {
     position: absolute;
-    top: 29px;
+    font-size: 4.98rem;
+    top: 33px;
     left: -100%;
     z-index: 50;
+}
+.heroCommon{
+    color: rgb(150, 150, 150);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-size: 1.7rem;
+
+}
+.intro {
+    top: 20%;
+    left: 30%;
+    z-index: 50;
+}
+.subHero {
+    bottom: 35%;
+    left: 50%;
+    z-index: 50;
+}
+.readMoreBtn {
+    width: 200px;
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    z-index: 50;
+}
+.closeBtn{
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: ease all 1s;
+}
+.closeBtn:hover{
+    background: coral;
 }
 
 /* ==========h1====== */
 .hero {
     position: relative;
+    /* border: 1px solid green; */
 }
-.down {
-    width: 20px;
-    text-align: center;
-    position: absolute;
-    opacity: 0.6;
-    height: 40px;
-    width: 100%;
-    bottom: 0;
-    cursor: pointer;
-}
-.down:hover{
-    color: coral;
-}
-
 .justify-content-end {
     text-align: end;
 }
 .button2 {
+    cursor: pointer;
+    font-size: 1rem;
     display: block;
     text-align: center;
     text-decoration: none;
     font-weight: bolder;
-    width: 30%;
+    /* width: 30%; */
     border-style: none;
     background: #171717;
     box-shadow: 4px 4px 5px #1f1f1f, -2px -2px 6px rgb(110, 110, 110);
     color: coral;
-    padding: 20px;
-    border-radius: 40px;
+    padding: 15px;
+    border-radius: 30px;
     transition: all ease .4s;
     margin: 15px auto;
 }
@@ -142,8 +171,14 @@ h1 {
     color: white;
     background-image: linear-gradient(-45deg, #EEB462, coral);
     box-shadow: 4px 4px 5px rgb(54, 54, 54), -2px -2px 6px#161616;
-
 }
+.myBtnMgn{
+    margin-top: 80px;
+}
+.btnWdth2 {
+    width: 55%;
+}
+
 .button2:active {
     box-shadow: none;
 
@@ -160,7 +195,7 @@ h1 {
 }
 main {
     /* height: 100vh; */
-    background: #171717;
+    /* background: #171717; */
     /* background-image: radial-gradient( rgba(42, 49, 59, 0.5), rgb(27, 27, 27) ), url(assets/maksym-zakharyak-6VBRu8jR8to-unsplash.jpg); */
     background-attachment: fixed;
 
@@ -172,7 +207,7 @@ main {
     /* height: 100vh; */
     display: flex;
     flex-direction: row;
-    padding: 50px 0;
+    padding: 25px 0;
     /* border: 1px solid goldenrod; */
 }
 .profileImage {
@@ -183,29 +218,37 @@ main {
 }
 .aboutMeText {
     width: 60%;
-    padding: 50px;
+    padding: 73px 50px 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 .roundIm {
     
-    border-radius: 100%;
-    width: 25vw;
-    height: 25vw;
+    /* border-radius: 100%; */
+    width: 37vw;
+    height: 37vw;
     object-fit: cover;
+
     
 }
 .specialFont {
-    font-size: 40px;
-    color: coral;
+    font-size: 4rem;
+    color: #ff7f50;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     padding: 10px 0;
+    margin: 0;
+}
+.coralFont {
+    color: #ff7f50;
+}
+.greyFont {
+    color: #575757;
 }
 
 footer {
-    height: 20vh;
+    height: 30vh;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -250,17 +293,16 @@ footer {
     justify-content: center;
 }
 .stack {
+    width: 13vw;;
     text-align: center;
     padding: 20px;
-    margin: 0 auto;
+    margin: 5px auto;
     transition: ease all .3s;
+    background: #2c2c2c;
+    
     /* border-radius: 50%; */
 }
-.stack:hover {
-    border-radius: 10px;
-    box-shadow: 0 4px 6px 6px rgba(43, 43, 43, 0.897);
 
-}
 .stackImg {
     width: 8vw;
     height: 8vw;
@@ -268,8 +310,9 @@ footer {
     margin: 0 auto;
 }
 
-.devStack{
-    /* margin: 0 auto; */
+#devStacks{
+    padding: 50px 0;
+    background: black;
 }
 
 .jstCntCentre {
@@ -282,7 +325,7 @@ footer {
     font-size: 1.3rem;
 }
 
-.row{
+.myRow{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -302,19 +345,75 @@ footer {
     border-radius: 10px;
 
 }
+img {
+    width: 100%;
+}
 .projectDesc{
     width: 40%;
     padding: 20px;
-
 }
+
 #devProjects{
-    width: 85%;
-    margin: 80px auto;
+    /* width: 85%; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.projectBox {
+    /* background: white; */
+    /* border-radius: 5px; */
+    /* width: 30%; */
+    /* border: 1px solid salmon; */
+    margin: 15px auto;
+    position: relative;
+}
+.projImg {
+    width: 60vh;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 5px;
     
 }
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+.projSumm {
+    width: 60vh;
+    height: 60vh;
+    padding-top: 70px;
+    background: #ff7f50d3;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+}
 
+.projWindow{
+    background: #000000d7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    /* width: 100vw; */
+    /* height: 100vh; */
 
+}
+.projWndMrg {
+    margin: 30px 70px;
+}
+.details1 {
 
+    padding: 30px 50px 0px 50px;
+}
 
 @keyframes bob {
     0% {		/* note: transform's default value is none */
