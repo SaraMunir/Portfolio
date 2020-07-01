@@ -455,7 +455,7 @@ img {
     border-bottom: 1px dotted rgb(233, 33, 33);
   }
   
-  .tooltiptext {
+  .resLogo .tooltiptext {
     visibility: hidden;
     width: 120px;
     color: coral;
@@ -472,8 +472,6 @@ img {
   .resLogo:hover .tooltiptext {
     visibility: visible;
   }
-
-
 
 /* =====FOR H1==== */
 
