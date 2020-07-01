@@ -443,7 +443,35 @@ img {
     font-size: 4rem;
     animation: bob 1s linear 1;
 }
+.resLogo{
+    position: relative;
+}
 
+
+.tooltip {
+    color: rebeccapurple;
+    /* position: relative;
+    display: inline-block; */
+    border-bottom: 1px dotted rgb(233, 33, 33);
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: coral;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    transition: ease all .5s;
+  }
+  
+  .resLogo:hover .tooltiptext {
+    visibility: visible;
+  }
 
 
 
