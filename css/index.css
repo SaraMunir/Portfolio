@@ -22,9 +22,11 @@ header {
     background-size: cover;
     /* background-attachment: fixed; */
     height: 100vh;
+    margin: 0;
     background-repeat: no-repeat;
     /* margin-bottom: 20px; */
 }
+
 .navBar {
     position: absolute;
     padding: 20px;
@@ -65,7 +67,7 @@ header {
 }
 p {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.8rem;
+    /* line-height: 1.8rem; */
 
 }
 .menuBar ul li a:hover {
@@ -82,42 +84,61 @@ p {
     display: none;
 }
 /* ==========h1====== */
+.myHero{
+    background: #2c2c2c;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), #171717),url('../assets/71ffb47ffd504078956bc68966b485f5.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 185px 0;
+}
+.heroContainer{
+    /* border: 3px solid salmon; */
+    width: 90%;
+    margin: 0px auto;
+}
 .myName {
-    width: 50%;
+    width: 37%;
+    /* border: 1px solid salmon; */
     margin: 0 auto;
-    padding: 100px;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 73px;
-    color:white;
+    color: white;
     position: relative;
-    top: 30%;
+    padding-bottom: 20px;
+    /* top: 30%; */
 }
 .heroText1 {
     color: coral;
     font-size: 7rem;
-    position: absolute;
-    top: 0;
-    right: -100%;
+    margin: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: -100%; */
 }
 .heroText2 {
-    position: absolute;
-    font-size: 4.98rem;
-    top: 33px;
-    left: -100%;
-    z-index: 50;
+    /* position: absolute; */
+    font-size: 4.95rem;
+    padding-top: 38px;
+    margin: 0;
+
+    /* top: 33px; */
+    /* left: -100%; */
+    /* z-index: 50; */
 }
 .heroCommon{
+    width: 70%;
     color: rgb(150, 150, 150);
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
+    /* position: absolute; */
     font-size: 1.7rem;
-
+    margin: 0 auto;
 }
 .intro {
-    top: 20%;
-    left: 30%;
-    z-index: 50;
+    padding-left: 50px;
 }
 .subHero {
     bottom: 35%;
@@ -204,36 +225,33 @@ main {
 }
 /* --------about me--- */
 .aboutMe {
-    /* height: 100vh; */
+    height: 105vh;
     display: flex;
     flex-direction: row;
-    padding: 25px 0;
+    padding: 25px 0 0 90px;
     /* border: 1px solid goldenrod; */
+    margin: 0 auto;
 }
 .profileImage {
-    display: flex;
-    justify-content: center;
     width: 40%;
-    padding: 50px 30px 50px 70px;
+    /* display: flex;
+    justify-content: center;
+    padding: 50px 30px 50px 70px; */
 }
 .aboutMeText {
     width: 60%;
     padding: 73px 50px 0px 50px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: end; */
 }
 .roundIm {
-    
-    /* border-radius: 100%; */
     width: 37vw;
     height: 37vw;
     object-fit: cover;
-
-    
 }
 .specialFont {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ff7f50;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
@@ -246,7 +264,6 @@ main {
 .greyFont {
     color: #575757;
 }
-
 footer {
     height: 30vh;
     margin: 20px 0;
@@ -287,33 +304,36 @@ footer {
     height: 100vh;
 }
 .stacksRow{
-    width: 79%;
+    width: 60%;
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     justify-content: center;
 }
 .stack {
-    width: 33vh;
+    width: 24vh;
     text-align: center;
     padding: 20px;
     margin: 5px auto;
     transition: ease all .3s;
     background: #2c2c2c;
+    border: 5px solid black;
     
     /* border-radius: 50%; */
 }
 
 .stackImg {
-    width: 20vh;
-    height: 20vh;
+    width: 10vh;
+    height: 10vh;
     object-fit: cover;
     margin: 0 auto;
 } 
+.stack h5 {
+    font-size: 0.9rem;
+}
 .stckSect {
-    /* height: 25vh; */
-    /* border: 1px solid red; */
+    height: 11vh;
 }
 
 #devStacks{
@@ -321,14 +341,19 @@ footer {
     background: black;
 }
 
-.jstCntCentre {
+/* .jstCntCentre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
+} */
 .aboutMeDes {
     font-size: 1.3rem;
+    color: #a5a5a5;
+}
+.fntOrng{
+    color: #cecdcd;
+    font-weight: 520;
 }
 
 .myRow{
@@ -366,10 +391,6 @@ img {
 }
 
 .projectBox {
-    /* background: white; */
-    /* border-radius: 5px; */
-    /* width: 30%; */
-    /* border: 1px solid salmon; */
     margin: 15px auto;
     position: relative;
 }
@@ -474,6 +495,9 @@ img {
   }
 
 /* =====FOR H1==== */
+.trial{
+    height: 50vh;
+}
 
 
 /* --------media Query-------- */

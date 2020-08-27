@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sara Munir</title>
+    <link rel="icon" href="assets/sm_logo.ico">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,600|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -14,6 +15,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body class="somt">
     <nav class="navBar">
@@ -22,100 +25,149 @@
         <div class="menuBar">
             <ul class="menuBarUL">
                 <li><a href="#" onClick="scrolAbout()">ABOUT</a></li>
-                <li><a href="#" onClick="ShowProjects()">PROJECTS</a></li>
+                <li><a href="#" onClick="ScrollToProjects()">PROJECTS</a></li>
                 <li><a href="#" onClick="ShowContacts()">CONTACT</a></li>
             </ul>
         </div>
     </nav>
-    <header class="hero">
-        <p class="hide intro heroCommon">Hi! I'm</p>
-        <h1 class="myName">
-            <span class="heroText1">Sara</span>
-            <span class="heroText2">MUNIR</span>
-        </h1>
-        <p class="hide subHero heroCommon"> I'm a full-stack web developer</p>
-        <div class="readAbtMeBtn hide">
-            <div class="readMoreBtn button2 "  onClick="scrolAbout()">READ MORE</div>
+    <div class="myHero">
+        <div class="heroContainer">
+            <p class="intro heroCommon text-left"
+            data-aos="fade-right"
+            data-aos-delay="60"
+            data-aos-duration="800">Hi! I'm</p>
+            <div class="myName text-center d-flex mx-auto">
+                    <div class="heroText1 text-right"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="500">Sara</div>
+                    <div class="heroText2 text-left"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="700">MUNIR</div>
+            </div>
+            <p 
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+            class="subHero heroCommon text-right"> I'm a full-stack web developer</p>
         </div>
-    </header>
-    <!-- make sure to add hide on class someme -->
-    <main class="someme ">
+    </div>
+    <main>
         <section >
-            <div class="aboutMe ">
-                <div class="profileImage">
+            <div class="aboutMe" >
+                <div class="profileImage mx-auto" 
+                data-aos="fade-left"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-duration="800">
                     <img class="roundIm myImg" src="assets/myProfilePhotoCutOut4.png" alt="">
                 </div>
-                <div class="aboutMeText">
+                <div class="aboutMeText mx-auto"
+                data-aos="fade-right"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-duration="800">
                     <h2 class="specialFont">About Me</h2>
-                    <p class="aboutMeDes">Hi I'm Sara, A full stackweb developer with a background in architecture. I absolutely love being able to combine my knack for design and logic based problem solving to bring abstract ideas to functional and user friendly websites. I am passionate about programing with key interest in both designs and animations.</p>
+                    <p class="aboutMeDes">
+                        Hi I'm Sara, A <span class="fntOrng">Full Stackweb Developer</span> with a background in architecture. I absolutely love being able to combine my knack for design and logic based problem solving to bring abstract ideas to functional and user friendly websites. I am passionate about programing with key interest in both designs and animations.                    
+                    </p>
+                    <p class="aboutMeDes">During my free time, i like to stalk cat <i class="fas fa-cat"></i> accounts on instagram </p>
                     <div class="myBtnClr button2" onClick="ShowStack()" style="width: 40%;">Read More</div>
                 </div>
             </div>
         </section>
         <section class="" id="devStacks">
-            <div class="jstCntCentre hide">
+            <div class="jstCntCentre">
                 <h3 class="specialFont" style="font-size: 3rem;
-                color: grey; margin: 20px 0;">Development Stacks I Use</h3>
-                <div class="stacksRow greyFont">
-                    <div class="stack jstCntCentre">
+                color: grey; text-align: center;">Development Stack</h3>
+                <div class="stacksRow greyFont row mx-auto" 
+                >
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="50">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/Html-logo.png" alt="">
                         </div>
                         <h5>HTML</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1100"
+                    data-aos-delay="100">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/Css-logo.png" alt="">
                         </div>
                         <h5>CSS</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="150">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/JavaScript-logo.png" alt="">
                         </div>
                         <h5>JAVASCRIPT</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1300"
+                    data-aos-delay="200">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/React-logo.png" alt="">
                         </div>
                         <h5>REACT</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1400"
+                    data-aos-delay="250">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/JQuery-logo.png" alt="">
                         </div>
                         <h5>JQuery</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-delay="300">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/Node-logo.png" alt="">
                         </div>
                         <h5>Node Js</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1600"
+                    data-aos-delay="350">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/Mongo-logo.png" alt="">
                         </div>
                         <h5>Mongo Db</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1700"
+                    data-aos-delay="400">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/MySql-logo.png" alt="">
                         </div>
                         <h5>My SQL</h5>
                     </div>
-                    <!-- <div class="stack jstCntCentre">
-                        <img class="stackImg" src="assets/Express-logo.png" alt="">
-                        <h5>EXPRESS</h5>
-                    </div> -->
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1800"
+                    data-aos-delay="450">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/PS-logo.png" alt="">
                         </div>
                         <h5>Photoshop</h5>
                     </div>
-                    <div class="stack jstCntCentre">
+                    <div class="stack jstCntCentre"
+                    data-aos="fade-up"
+                    data-aos-duration="1900"
+                    data-aos-delay="500">
                         <div class="stckSect">
                             <img class="stackImg" src="assets/AI-logo.png" alt="">
                         </div>
@@ -123,11 +175,11 @@
                     </div>
                 </div>
             </div>
-            <div class="myBtnClr button2" onClick="ShowProjects()" style="width: 20%;">Projects</div>
+            
         </section>
         <!-- make sure to add hide on class devprojects -->
         
-        <section class="hide" id="devProjects">
+        <section class="" id="devProjects">
             <div class="projWindow hide">
                 <div class="projWndMrg">
                     <div class="d-flex justify-content-end">
@@ -150,8 +202,9 @@
             </div>
             <h3 class="specialFont" style="text-align: center;">Projects</h3>
             <div class="container">
-                <div class="projects" id="projectsSection">
-                    <div class="myRow proj1" id="proj1">
+                <!-- projects -->
+                <div class="row" id="projectsSection">
+                    <!-- <div class="myRow proj1" id="proj1">
                         <img class="projImg" src="assets/priscilla-du-preez-LpmlXMMEX4U-unsplash.jpg" alt="">
                         <div class="projSumm hide" id="proj1Detl">
                             <h2 class=" text-center">Movie Maniax</h2>
@@ -167,7 +220,7 @@
                     </div>
                     <div class="projectBox" id="proj3">
                         <img class="projImg" src="assets/googleBooksPre.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -202,12 +255,17 @@
                 </div>
             </div>  
             <div class="copyRight">
-                <p>© 2020 by Sara Munir</p>
+                <p>© 2020 by Sara Munir
+                </p>
+                
             </div>
         </footer>
     </main>
     <!-- <div class="boxTest2"></div> -->
-    <div data-aos="fade-in"></div>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

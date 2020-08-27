@@ -27,15 +27,6 @@ let projectDetail = [
         projectGitHub: 'https://github.com/SaraMunir/googlebooks'
     },
     {
-        projectId: 'pro4', 
-        projeHoverId: 'hover4',
-        projectName: 'Cooking For Dummies', 
-        projectDesc: 'This web application is designed to take a user step by step through any recipe found on the internet. The user is able to save their favourite recipes and access them later. User is provided with nutritional information.something bla bla bla44444 something',
-        projectImg: 'assets/cookingForDummies.jpg', 
-        projectLink: 'https://stephanieblom.github.io/Project-1/',
-        projectGitHub: 'https://github.com/stephanieblom/Project-1'
-    },
-    {
         projectId: 'pro5', 
         projeHoverId: 'hover5',
         projectName: 'Weather Dashboard', 
@@ -75,24 +66,25 @@ $(document).ready(function(){
         // $( "#hider" ).hide( 500 );
         return;
     });
+    ShowProjects()
     //=================FOR H1 ANIMATION
-heroIntroAnimation()
-function heroAnimation(){
+// heroIntroAnimation()
+// function heroAnimation(){
     
-        // $(".heroText2").fadeIn('slow');
-        $(".heroText2").animate({
-            left: '50%',
-        }, 2500);
-        // $(".heroText1").fadeIn('slow');
-        $(".heroText1").animate({
-            right: '50%',
-            // fontSize: '73px'
-        }, 2500);
-        return;
-    }
-    setTimeout(heroAnimation, 800);
-    setTimeout(subHeroAnimation, 2800);
-    setTimeout(readAboutMeAnimation, 3800);
+//         // $(".heroText2").fadeIn('slow');
+//         $(".heroText2").animate({
+//             left: '50%',
+//         }, 2500);
+//         // $(".heroText1").fadeIn('slow');
+//         $(".heroText1").animate({
+//             right: '50%',
+//             // fontSize: '73px'
+//         }, 2500);
+//         return;
+// //     }
+//     // setTimeout(heroAnimation, 800);
+//     setTimeout(subHeroAnimation, 2800);
+//     setTimeout(readAboutMeAnimation, 3800);
 function heroIntroAnimation(){
     $( ".intro" ).slideDown( 1500 );
         return;
@@ -127,8 +119,6 @@ function scrolAbout(){
 // function ShowProjectArray(){
 
 // }
-
-
 function showProj1Detail(projId){ 
     console.log('is the button working', projId)
     $( ".projWindow" ).removeClass( "hide" );
@@ -139,9 +129,7 @@ function showProj1Detail(projId){
     // console.log(projectDetail);
     projectDetail.forEach(project => {
         if (project.projectId == projId){
-            
             console.log(project.projectName);
-            
             $("#pro1").html(`
             <img src= "${project.projectImg}" alt="ss" class="col-lg-6"" >
             <div class="details1 col-lg-6 text-center">
@@ -169,20 +157,15 @@ function ShowContacts(){
         scrollTop: $("#contact").offset().top
         }, 1500);
 }
-async function ShowProjects(){
-    // $( "#devStacks" ).hide( 1500 );
-    $( "#devProjects" ).show();
-    $('html, body').animate({
-        scrollTop: $("#devProjects").offset().top
-        }, 1500);
-    $( ".projectBox" ).slideDown( 3000);
-    $( "#projectsSection").html('')
 
-    // $( "#myCookbook" ).hide( 1500 );
+async function ShowProjects(){
     await projectDetail.forEach(projects => {
         console.log(projects.projectName)
         $( "#projectsSection").append(`
-        <div class="projectBox proj1" id=${projects.projectId}>
+        <div class="projectBox proj1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="50" id=${projects.projectId}>
             <img class="projImg" src=${projects.projectImg} alt="">
             <div class="projSumm hide" id='${projects.projeHoverId}'>
                 <h3 class=" text-center">${projects.projectName}</h3>
@@ -222,6 +205,14 @@ function PrevProject(){
     //     }, 1500);
     $( "#buttonsArea").html('<div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>')
 }
+
+function ScrollToProjects(){
+    $('html, body').animate({
+        scrollTop: $("#devProjects").offset().top
+        }, 1500);
+
+}
+
 
 $(".boxTest").scroll(function() {
     alert('box test reached')
