@@ -167,9 +167,11 @@ async function ShowProjects(){
         data-aos-duration="1000"
         data-aos-delay="50" id=${projects.projectId}>
             <img class="projImg" src=${projects.projectImg} alt="">
-            <div class="projSumm hide" id='${projects.projeHoverId}'>
+            <div class="projSumm1"><h3 class="coralFont">${projects.projectName}</h3></div>
+            <div class="projSumm hide"
+            id='${projects.projeHoverId}'>
                 <h3 class=" text-center">${projects.projectName}</h3>
-                <div class="myBtnMgn button2 btnWdth2" onClick="showProj1Detail('${projects.projectId}')">Show Detail</div>
+                <div class="proSummBtn" onClick="showProj1Detail('${projects.projectId}')">Show Detail</div>
             </div> 
         </div>
         `);
@@ -189,22 +191,7 @@ async function ShowProjects(){
 
 }
 
-function NextProject(){
-    $( "#weatherBoard" ).hide( 1500 );
-    $( "#myCookbook" ).show( 1500 );
-    // $('html, body').animate({
-    //     scrollTop: $("#devStacks").offset().top
-    //     }, 1500);
-    $( "#buttonsArea").html('<div class="button2" style="width: 150px;" onClick="PrevProject()">Prev Project</div>')
-}
-function PrevProject(){
-    $( "#weatherBoard" ).show( 1500 );
-    $( "#myCookbook" ).hide( 1500 );
-    // $('html, body').animate({
-    //     scrollTop: $("#devStacks").offset().top
-    //     }, 1500);
-    $( "#buttonsArea").html('<div class="button2" style="width: 150px;" onClick="NextProject()">Next Project</div>')
-}
+
 
 function ScrollToProjects(){
     $('html, body').animate({
