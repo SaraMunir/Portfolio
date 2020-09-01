@@ -229,7 +229,7 @@ main {
 }
 /* --------about me--- */
 .aboutMe {
-    height: 105vh;
+    min-height: 105vh;
     display: flex;
     flex-direction: row;
     padding: 25px 0 0 90px;
@@ -350,7 +350,7 @@ footer .p {
 }
 
 #devStacks{
-    height: 90vh;
+    min-height: 90vh;
     padding: 50px 0;
     background: #181818;
 }
@@ -471,7 +471,7 @@ img {
     right: 0;
     z-index: 200;
     /* width: 100vw; */
-    /* height: 100vh; */
+    min-height: 100vh;
 
 }
 .projWndMrg {
@@ -540,6 +540,18 @@ img {
 /* =====FOR H1==== */
 .trial{
     height: 50vh;
+}
+
+
+.toolTags{
+    padding: 8px;
+    border-radius: 3px;
+    background: #ff7f50d3;
+    color: #dadada;
+    margin: 2px;
+}
+#projectTool{
+    width: 80%;
 }
 
 

@@ -6,7 +6,8 @@ let projectDetail = [
         projectDesc: 'Movie Maniax is a user-friendly movie search application built on MERN stack. Users are offered a range of search options such as Popular, Top-Rated, Upcoming, and Genre. Once a member of Movie Maniax, users unlock a variety of rich features such as add to watchlist/favourites, build custom tags to make accessibility of movies easier, and read/write reviews/comments. Furthermore, to include a socializing aspect to our application, we allow users to make new friends with other Movie Maniax members. Once the user has made a Movie Maniax buddy, they can check out their friends and follower profile pages and get a glimpse of their favourite movies, watch lists, and reviews.',
         projectImg: 'assets/movieManiaxpPre.png', 
         projectLink: 'https://movie-app123.herokuapp.com/',
-        projectGitHub: 'https://github.com/jsanthos01/MovieManiax'
+        projectGitHub: 'https://github.com/jsanthos01/MovieManiax',
+        projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'API']
     },
     {
         projectId: 'pro2', 
@@ -15,7 +16,9 @@ let projectDetail = [
         projectDesc: `Fitness Diaries is a full-stack web application that uses MVC design pattern with local server-side API. The application is designed for people who are conscious about their health and follow a fitness regime or lose weight with a socializing aspect. The app addresses the need of having some friends around who can motivate and cheer you up in your fitness journey instead of a showcasing a plain list of exercises and diet plans. It's concise compared to social networking channels and broader than chat applications.`,
         projectImg: 'assets/fitnessDiariesPre.png', 
         projectLink: 'https://fitness-diaries.herokuapp.com/',
-        projectGitHub: 'https://github.com/jsanthos01/Fitness-Diaries'
+        projectGitHub: 'https://github.com/jsanthos01/Fitness-Diaries',
+        projectTools: [ 'jQuery','SQL', 'Express', 'NodeJs', 'API', 'HTML', 'CSS3']
+
     },
     {
         projectId: 'pro3', 
@@ -24,7 +27,9 @@ let projectDetail = [
         projectDesc: `Google books is a MERN stack application that allows users to search books. This application was built using React components, working with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Node, Express and MongoDB was used so that users can save books to review or purchase later.`,
         projectImg: 'assets/googleBooksPre.jpg', 
         projectLink: 'https://googlebooksbt2020.herokuapp.com/',
-        projectGitHub: 'https://github.com/SaraMunir/googlebooks'
+        projectGitHub: 'https://github.com/SaraMunir/googlebooks',
+        projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'GoogleAPI']
+
     },
     {
         projectId: 'pro5', 
@@ -33,7 +38,18 @@ let projectDetail = [
         projectDesc: 'This weather app allows users to search for a city with current and future weather conditions for that city. Users are able to add to the search history and also retrive the data when they visit the app again. The user can delete the cities from the search history',
         projectImg: 'assets/weatherApp.jpg', 
         projectLink: 'https://saramunir.github.io/Weather-Dashboard/',
-        projectGitHub: 'https://github.com/SaraMunir/Weather-Dashboard'
+        projectGitHub: 'https://github.com/SaraMunir/Weather-Dashboard',
+        projectTools: [ 'jQuery','API','HTML', 'CSS3']
+    },
+    {
+        projectId: 'pro6', 
+        projeHoverId: 'hover6',
+        projectName: 'Chronus Business', 
+        projectDesc: 'Responsive PSD conversion project', 
+        projectImg: 'assets/PSD-conversion.jpg', 
+        projectLink: 'https://saramunir.github.io/PsdConversion/',
+        projectGitHub: 'https://github.com/SaraMunir/PsdConversion',
+        projectTools: [ 'jQuery', 'API', 'HTML', 'CSS3']
     }
     
 ]
@@ -135,13 +151,18 @@ function showProj1Detail(projId){
             <div class="details1 col-lg-6 text-center">
                 <h1 class="coralFont">${project.projectName}</h1>
                 <p>${project.projectDesc}</p>
+                <div class="row mx-auto" id="projectTool">
+                </div>
                 <div class="d-flex justify-content-center mx-auto" style="width: 70%;">
                     <a href="${project.projectLink}" class="button2" style="width: 150px;">Live Demo</a>
                     <a href="${project.projectGitHub}" class="button2" style="width: 150px;">Git Hub</a>
                 </div>
             </div>
-            
             `)
+            project.projectTools.forEach(tool=>{
+                $("#projectTool").append(`<div class="toolTags mx-auto">${tool}</div>`)
+            }
+            )
         }  else {
             return    
         }
