@@ -5,7 +5,7 @@ let projectDetail = [
         projectName: 'Movie Maniax', 
         projectDesc: 'Movie Maniax is a user-friendly movie search application built on MERN stack. Users are offered a range of search options such as Popular, Top-Rated, Upcoming, and Genre. Once a member of Movie Maniax, users unlock a variety of rich features such as add to watchlist/favourites, build custom tags to make accessibility of movies easier, and read/write reviews/comments. Furthermore, to include a socializing aspect to our application, we allow users to make new friends with other Movie Maniax members. Once the user has made a Movie Maniax buddy, they can check out their friends and follower profile pages and get a glimpse of their favourite movies, watch lists, and reviews.',
         projectImg: 'assets/movieManiaxpPre.png', 
-        projectLink: 'https://movie-app123.herokuapp.com/',
+        projectLink: 'https://movie-maniax.herokuapp.com/',
         projectGitHub: 'https://github.com/jsanthos01/MovieManiax',
         projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'API']
     },
@@ -54,14 +54,13 @@ let projectDetail = [
     
 ]
 $(document).ready(function(){
-    // $(window).scroll(function() {
-    // var scroll = $(window).scrollTop();
-    // $(".hero").css({
-    //     transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
-    // });
-    // });
+    setTimeout(() => {
+        console.log('why no add?')
+        $( "#loadWndo" ).fadeOut(500);
+    }, 1200);
+
 //=================FOR nav
-    $( ".menuBar" ).hide() 
+    // $( ".menuBar" ).hide() 
     $( "#hider" ).mouseover(function() {
         $( ".menuBar" ).show( 1500 );
         $( "#hider" ).hide( 500 );
@@ -84,37 +83,19 @@ $(document).ready(function(){
     });
     ShowProjects()
     //=================FOR H1 ANIMATION
-// heroIntroAnimation()
-// function heroAnimation(){
-    
-//         // $(".heroText2").fadeIn('slow');
-//         $(".heroText2").animate({
-//             left: '50%',
-//         }, 2500);
-//         // $(".heroText1").fadeIn('slow');
-//         $(".heroText1").animate({
-//             right: '50%',
-//             // fontSize: '73px'
-//         }, 2500);
-//         return;
-// //     }
-//     // setTimeout(heroAnimation, 800);
-//     setTimeout(subHeroAnimation, 2800);
-//     setTimeout(readAboutMeAnimation, 3800);
-function heroIntroAnimation(){
-    $( ".intro" ).slideDown( 1500 );
-        return;
-    }
-function subHeroAnimation(){
-    $( ".subHero" ).slideDown( 1500 );
-        return;
-    }
-function readAboutMeAnimation(){
-    $( ".readAbtMeBtn" ).show( 1500 );
-        return;
-    }
-    
-    
+
+    function heroIntroAnimation(){
+        $( ".intro" ).slideDown( 1500 );
+            return;
+        }
+    function subHeroAnimation(){
+        $( ".subHero" ).slideDown( 1500 );
+            return;
+        }
+    function readAboutMeAnimation(){
+        $( ".readAbtMeBtn" ).show( 1500 );
+            return;
+        }
     //========dont delete below
 });
 function ShowStack(){
@@ -136,8 +117,7 @@ function scrolAbout(){
 
 // }
 function showProj1Detail(projId){ 
-    console.log('is the button working', projId)
-    $( ".projWindow" ).removeClass( "hide" );
+    $( ".projWindow" ).fadeIn(700);
     $('html, body').animate({
         scrollTop: $(".projWindow").offset().top
         }, 600);
@@ -145,33 +125,29 @@ function showProj1Detail(projId){
     // console.log(projectDetail);
     projectDetail.forEach(project => {
         if (project.projectId == projId){
-            console.log(project.projectName);
             $("#pro1").html(`
-            <img src= "${project.projectImg}" alt="ss" class="col-lg-6"" >
+            <img src= "${project.projectImg}" alt="ss" class="detailPrjImg col-lg-6"" >
             <div class="details1 col-lg-6 text-center">
                 <h1 class="coralFont">${project.projectName}</h1>
                 <p>${project.projectDesc}</p>
-                <div class="row mx-auto" id="projectTool">
+                <div class="row mx-auto justifty-content-around" id="projectTool">
                 </div>
-                <div class="d-flex justify-content-center mx-auto" style="width: 70%;">
+                <div class="row justify-content-center mx-auto" style="width: 70%;">
                     <a href="${project.projectLink}" class="button2" style="width: 150px;">Live Demo</a>
                     <a href="${project.projectGitHub}" class="button2" style="width: 150px;">Git Hub</a>
                 </div>
             </div>
             `)
             project.projectTools.forEach(tool=>{
-                $("#projectTool").append(`<div class="toolTags mx-auto">${tool}</div>`)
-            }
+                $("#projectTool").append(`<div class="toolTags mx-auto">${tool}</div>`)}
             )
         }  else {
             return    
         }
-    }
-        
-    )
+    })
 }
 function closeProjWnd(){
-    $( ".projWindow" ).addClass( "hide" )
+    $( ".projWindow" ).hide()
 }
 function ShowContacts(){
     $('html, body').animate({
@@ -191,39 +167,24 @@ async function ShowProjects(){
             <div class="projSumm1"><h3 class="coralFont">${projects.projectName}</h3></div>
             <div class="projSumm hide"
             id='${projects.projeHoverId}'>
-                <h3 class=" text-center">${projects.projectName}</h3>
+                <h3 class="projHead text-center">${projects.projectName}</h3>
                 <div class="proSummBtn" onClick="showProj1Detail('${projects.projectId}')">Show Detail</div>
             </div> 
         </div>
         `);
-
         $( `#${projects.projectId}` ).mouseover(function() {
             console.log(projects.projeHoverId)
             $( `#${projects.projeHoverId}` ).fadeIn( 500 );
             return;
         });
-
         $( `#${projects.projectId}` ).mouseleave(function() {
             $( `#${projects.projeHoverId}` ).fadeOut( 200 );
             return;
         });
-
     })
-
 }
-
-
-
 function ScrollToProjects(){
     $('html, body').animate({
         scrollTop: $("#devProjects").offset().top
         }, 1500);
-
 }
-
-
-$(".boxTest").scroll(function() {
-    alert('box test reached')
-    
-});
-        

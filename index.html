@@ -7,10 +7,10 @@
     <link rel="icon" href="assets/sm_logo.ico">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,600|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.goefogleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/fbeca39ed0.js"></script>
+    <!-- <link href="https://fonts.goefogleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://use.fontawesome.com/fbeca39ed0.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="somt">
+    <div class="loadingWndo mx-auto" style="padding-top: 30vh;" id="loadWndo">
+        <div class="loadIo" >
+            <img class="mx-auto" src="./assets/Square-1s-200px.gif" alt="loadingIo">
+        </div>
+    </div>
     <nav class="navBar">
         <img class="logo" src="assets/sm_logo_white.png" alt="">
         <i class="fa fa-th fa-2x" id="hider" aria-hidden="true"></i>
-        <div class="menuBar">
+        <div class="menuBar hide">
             <ul class="menuBarUL">
                 <li><a href="#" onClick="scrolAbout()">ABOUT</a></li>
                 <li><a href="#" onClick="ScrollToProjects()">PROJECTS</a></li>
@@ -32,23 +37,24 @@
     <div class="myHero">
         <div class="heroContainer">
             <p class="intro heroCommon text-left"
-            data-aos="fade-right"
-            data-aos-delay="60"
+            data-aos="fade-down"
+            data-aos-delay="1400"
             data-aos-duration="800">Hi! I'm</p>
             <div class="myName text-center d-flex mx-auto">
-                    <div class="heroText1 text-right"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-delay="500">Sara</div>
-                    <div class="heroText2 text-left"
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-delay="700">MUNIR</div>
+                <!-- <h1 class="ml16 heroText1">Sara Munir</h1> -->
+                <div class="heroText1 text-right"
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="1600">Sara</div>
+                <div class="heroText2 text-left"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="1700">MUNIR</div>
             </div>
             <p 
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="900"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="1900"
             class="subHero heroCommon text-right"> I'm a full-stack web developer</p>
         </div>
     </div>
@@ -78,7 +84,6 @@
         </section>
         <section class="" id="devStacks">
             <div class="jstCntCentre">
-                
                 <h3 class="specialFont" style="font-size: 3rem;
                 color: grey; text-align: center;">Development Stack</h3>
                 <div class="stacksRow greyFont row mx-auto" 
@@ -175,10 +180,7 @@
                     </div>
                 </div>
             </div>
-            
         </section>
-        <!-- make sure to add hide on class devprojects -->
-        
         <section class="" id="devProjects">
             <div class="projWindow hide">
                 <div class="projWndMrg">
@@ -191,7 +193,6 @@
                             <h2>Movie Maniax</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus, quis quos, a aliquid soluta animi possimus sunt asperiores natus quasi mollitia distinctio et hic ab earum repellat optio harum?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis odio repellat. Vero deserunt omnis repudiandae alias sunt, adipisci id at fugiat necessitatibus cumque! Quia similique quibusdam incidunt labore aliquam?</p>
-                            
                             <div class="d-flex justify-content-center" style="width: 70%;">
                                 <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
                                 <a href="https://saramunir.github.io/Weather-Dashboard/" class="button2" style="width: 150px;">Live Demo</a>
@@ -199,7 +200,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <h3 class="specialFont mt-5" style="text-align: center;">Projects</h3>
             <div class="container">
@@ -218,7 +218,6 @@
                         <p class="tooltiptext">Github</p>
                     </a>
                 </div>
-                
                 <div class="socialBox">
                     <a href="https://www.linkedin.com/in/sara-munir-689058b5/" class="resLogo">
                         <i class="fab fa-linkedin-square fa-3x" aria-hidden="true"></i>
@@ -246,6 +245,7 @@
     </main>
     <!-- <div class="boxTest2"></div> -->
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
