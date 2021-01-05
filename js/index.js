@@ -12,12 +12,14 @@ let projectDetail = [
     {
         projectId: 'pro2', 
         projeHoverId: 'hover2',
-        projectName: 'Fitness Diaries', 
-        projectDesc: `Fitness Diaries is a full-stack web application that uses MVC design pattern with local server-side API. The application is designed for people who are conscious about their health and follow a fitness regime or lose weight with a socializing aspect. The app addresses the need of having some friends around who can motivate and cheer you up in your fitness journey instead of a showcasing a plain list of exercises and diet plans. It's concise compared to social networking channels and broader than chat applications.`,
-        projectImg: 'assets/fitnessDiariesPre.png', 
-        projectLink: 'https://fitness-diaries.herokuapp.com/',
-        projectGitHub: 'https://github.com/jsanthos01/Fitness-Diaries',
-        projectTools: [ 'jQuery','SQL', 'Express', 'NodeJs', 'API', 'HTML', 'CSS3']
+        projectName: 'My Collective Group', 
+        projectDesc: `My Collective Group app was designed and built to manage my group The groups can be any type of groups of any size. For example a teacher creating a group consisting of his/her students either focused on a subject or a certain grade. Other type can be managing groups consisting of people having common interests or goals.
+
+        The application was built on MERN stack. it allows users to create groups, add members. the groups have discussion boards where the members can create/start discussion on any topic they want.`,
+        projectImg: 'assets/myCollectiveGroup.png', 
+        projectLink: 'https://manage-my-group.herokuapp.com/',
+        projectGitHub: 'https://github.com/SaraMunir/myEmployeesManagement',
+        projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'HTML', 'CSS3', 'Bootstrap']
 
     },
     {
@@ -29,7 +31,6 @@ let projectDetail = [
         projectLink: 'https://googlebooksbt2020.herokuapp.com/',
         projectGitHub: 'https://github.com/SaraMunir/googlebooks',
         projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'GoogleAPI']
-
     },
     {
         projectId: 'pro5', 
@@ -45,11 +46,11 @@ let projectDetail = [
         projectId: 'pro6', 
         projeHoverId: 'hover6',
         projectName: 'Chronus Business', 
-        projectDesc: 'Responsive PSD conversion project', 
+        projectDesc: 'Responsive PSD conversion project. Website designing involves series of steps and one of the most important steps in the web design process is the conversion of PSD file to HTML format. This website is an exact recreation of the PSD file which is also fully responsive.', 
         projectImg: 'assets/PSD-conversion.jpg', 
         projectLink: 'https://saramunir.github.io/PsdConversion/',
         projectGitHub: 'https://github.com/SaraMunir/PsdConversion',
-        projectTools: [ 'jQuery', 'API', 'HTML', 'CSS3']
+        projectTools: [ 'HTML5','CSS3','Javascript','jQuery']
     }
     
 ]
