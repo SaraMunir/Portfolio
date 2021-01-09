@@ -23,14 +23,14 @@ let projectDetail = [
 
     },
     {
-        projectId: 'pro3', 
-        projeHoverId: 'hover3',
-        projectName: 'Google Books Search', 
-        projectDesc: `Google books is a MERN stack application that allows users to search books. This application was built using React components, working with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Node, Express and MongoDB was used so that users can save books to review or purchase later.`,
-        projectImg: 'assets/googleBooksPre.jpg', 
-        projectLink: 'https://googlebooksbt2020.herokuapp.com/',
-        projectGitHub: 'https://github.com/SaraMunir/googlebooks',
-        projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'GoogleAPI']
+        projectId: 'pro6', 
+        projeHoverId: 'hover6',
+        projectName: 'Chronus Business', 
+        projectDesc: 'Responsive PSD conversion project. Website designing involves series of steps and one of the most important steps in the web design process is the conversion of PSD file to HTML format. This website is an exact recreation of the PSD file which is also fully responsive.', 
+        projectImg: 'assets/PSD-conversion.jpg', 
+        projectLink: 'https://saramunir.github.io/PsdConversion/',
+        projectGitHub: 'https://github.com/SaraMunir/PsdConversion',
+        projectTools: [ 'HTML5','CSS3','Javascript','jQuery']
     },
     {
         projectId: 'pro5', 
@@ -43,15 +43,16 @@ let projectDetail = [
         projectTools: [ 'jQuery','API','HTML', 'CSS3']
     },
     {
-        projectId: 'pro6', 
-        projeHoverId: 'hover6',
-        projectName: 'Chronus Business', 
-        projectDesc: 'Responsive PSD conversion project. Website designing involves series of steps and one of the most important steps in the web design process is the conversion of PSD file to HTML format. This website is an exact recreation of the PSD file which is also fully responsive.', 
-        projectImg: 'assets/PSD-conversion.jpg', 
-        projectLink: 'https://saramunir.github.io/PsdConversion/',
-        projectGitHub: 'https://github.com/SaraMunir/PsdConversion',
-        projectTools: [ 'HTML5','CSS3','Javascript','jQuery']
+        projectId: 'pro3', 
+        projeHoverId: 'hover3',
+        projectName: 'Google Books Search', 
+        projectDesc: `Google books is a MERN stack application that allows users to search books. This application was built using React components, working with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Node, Express and MongoDB was used so that users can save books to review or purchase later.`,
+        projectImg: 'assets/googleBooksPre.jpg', 
+        projectLink: 'https://googlebooksbt2020.herokuapp.com/',
+        projectGitHub: 'https://github.com/SaraMunir/googlebooks',
+        projectTools: [ 'MongoDB', 'Express','REACT', 'NodeJs', 'GoogleAPI']
     }
+    
     
 ]
 $(document).ready(function(){
